@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include gue_tools *.css
+recursive-include gue_tools *.csv
+recursive-include gue_tools *.html
+recursive-include gue_tools *.ico
+recursive-include gue_tools *.js
+recursive-include gue_tools *.json
+recursive-include gue_tools *.md
+recursive-include gue_tools *.png
+recursive-include gue_tools *.py
+recursive-include gue_tools *.svg
+recursive-include gue_tools *.txt
+recursive-exclude gue_tools *.pyc
