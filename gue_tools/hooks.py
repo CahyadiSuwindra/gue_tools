@@ -128,19 +128,19 @@ app_license = "MIT"
 
 doc_events = {
     "*": {
-        "before_insert": "whatsapp.utils.run_server_script_for_doc_event",
-        "after_insert": "whatsapp.utils.run_server_script_for_doc_event",
-        "before_validate": "whatsapp.utils.run_server_script_for_doc_event",
-        "validate": "whatsapp.utils.run_server_script_for_doc_event",
-        "on_update": "whatsapp.utils.run_server_script_for_doc_event",
-        "before_submit": "whatsapp.utils.run_server_script_for_doc_event",
-        "on_submit": "whatsapp.utils.run_server_script_for_doc_event",
-        "before_cancel": "whatsapp.utils.run_server_script_for_doc_event",
-        "on_cancel": "whatsapp.utils.run_server_script_for_doc_event",
-        "on_trash": "whatsapp.utils.run_server_script_for_doc_event",
-        "after_delete": "whatsapp.utils.run_server_script_for_doc_event",
-        "before_update_after_submit": "whatsapp.utils.run_server_script_for_doc_event",
-        "on_update_after_submit": "whatsapp.utils.run_server_script_for_doc_event"
+        "before_insert": "gue_tools.whatsapp.utils.run_server_script_for_doc_event",
+        "after_insert": "gue_tools.whatsapp.utils.run_server_script_for_doc_event",
+        "before_validate": "gue_tools.whatsapp.utils.run_server_script_for_doc_event",
+        "validate": "gue_tools.whatsapp.utils.run_server_script_for_doc_event",
+        "on_update": "gue_tools.whatsapp.utils.run_server_script_for_doc_event",
+        "before_submit": "gue_tools.whatsapp.utils.run_server_script_for_doc_event",
+        "on_submit": "gue_tools.whatsapp.utils.run_server_script_for_doc_event",
+        "before_cancel": "gue_tools.whatsapp.utils.run_server_script_for_doc_event",
+        "on_cancel": "gue_tools.whatsapp.utils.run_server_script_for_doc_event",
+        "on_trash": "gue_tools.whatsapp.utils.run_server_script_for_doc_event",
+        "after_delete": "gue_tools.whatsapp.utils.run_server_script_for_doc_event",
+        "before_update_after_submit": "gue_tools.whatsapp.utils.run_server_script_for_doc_event",
+        "on_update_after_submit": "gue_tools.whatsapp.utils.run_server_script_for_doc_event"
     }
 }
 
