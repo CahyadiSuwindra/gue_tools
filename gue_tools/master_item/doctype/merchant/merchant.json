@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2023-09-21 22:06:20.198449",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nama_merchant",
+  "alamat_merchant",
+  "tlp_merchant",
+  "email_merchant"
+ ],
+ "fields": [
+  {
+   "fieldname": "nama_merchant",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Merchant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alamat_merchant",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Alamat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tlp_merchant",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Telephone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_merchant",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-04 14:33:14.252172",
+ "modified_by": "Administrator",
+ "module": "master_item",
+ "name": "Merchant",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Product",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Master Product MGR",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

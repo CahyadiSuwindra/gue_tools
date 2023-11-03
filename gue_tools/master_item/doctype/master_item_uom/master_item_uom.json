@@ -1,0 +1,224 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-24 17:20:12.216107",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sb4",
+  "varian",
+  "cb1",
+  "varian_name",
+  "cb2",
+  "level",
+  "cb3",
+  "level_name",
+  "sb1",
+  "uom",
+  "cb4",
+  "conversion",
+  "cb5",
+  "sku_code",
+  "cb6",
+  "packaging",
+  "sb2",
+  "product_image1",
+  "cb7",
+  "product_image2",
+  "cb8",
+  "product_image3",
+  "cb9",
+  "product_image4",
+  "sb3",
+  "berat_kg",
+  "cb10",
+  "vol_l",
+  "cb11",
+  "panajng_mm",
+  "cb12",
+  "lebar_mm",
+  "cb13",
+  "tinggi_mm"
+ ],
+ "fields": [
+  {
+   "fieldname": "varian",
+   "fieldtype": "Float",
+   "label": "Varian"
+  },
+  {
+   "fieldname": "level",
+   "fieldtype": "Float",
+   "label": "Level"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOMS"
+  },
+  {
+   "fieldname": "conversion",
+   "fieldtype": "Float",
+   "label": "Conversion"
+  },
+  {
+   "fieldname": "sku_code",
+   "fieldtype": "Data",
+   "label": "SKU Code"
+  },
+  {
+   "fieldname": "product_image1",
+   "fieldtype": "Attach Image",
+   "label": "Image1"
+  },
+  {
+   "fieldname": "product_image2",
+   "fieldtype": "Attach Image",
+   "label": "Image2"
+  },
+  {
+   "fieldname": "product_image3",
+   "fieldtype": "Attach Image",
+   "label": "Image3"
+  },
+  {
+   "fieldname": "product_image4",
+   "fieldtype": "Attach Image",
+   "label": "Image Additional"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "sb4",
+   "fieldtype": "Section Break",
+   "label": "Varian&Level"
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "varian_name",
+   "fieldtype": "Data",
+   "label": "Varian Name"
+  },
+  {
+   "fieldname": "cb2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "level_name",
+   "fieldtype": "Data",
+   "label": "Level Name"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "sb1",
+   "fieldtype": "Section Break",
+   "label": "UOM, Conversion&SKU"
+  },
+  {
+   "fieldname": "cb4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "packaging",
+   "fieldtype": "Data",
+   "label": "Packaging"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "sb2",
+   "fieldtype": "Section Break",
+   "label": "Product Image"
+  },
+  {
+   "fieldname": "cb7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "sb3",
+   "fieldtype": "Section Break",
+   "label": "Dimensi"
+  },
+  {
+   "fieldname": "berat_kg",
+   "fieldtype": "Float",
+   "label": "Berat(Kg)"
+  },
+  {
+   "fieldname": "cb10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vol_l",
+   "fieldtype": "Float",
+   "label": "Volume(L)"
+  },
+  {
+   "fieldname": "cb11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "panajng_mm",
+   "fieldtype": "Float",
+   "label": "Panjang(mm)"
+  },
+  {
+   "fieldname": "cb12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lebar_mm",
+   "fieldtype": "Float",
+   "label": "Lebar(mm)"
+  },
+  {
+   "fieldname": "cb13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tinggi_mm",
+   "fieldtype": "Float",
+   "label": "Tinggi(mm)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-30 11:13:41.193225",
+ "modified_by": "Administrator",
+ "module": "master_item",
+ "name": "Master Item UOM",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

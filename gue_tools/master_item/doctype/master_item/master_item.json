@@ -1,0 +1,749 @@
+{
+ "_comments": "[{\"comment\": \"<div class=\\\"ql-editor read-mode\\\"><p>test</p></div>\", \"by\": \"admin@example.com\", \"name\": \"14ab89293d\"}, {\"comment\": \"<div class=\\\"ql-editor read-mode\\\"><p>test3</p></div>\", \"by\": \"admin@example.com\", \"name\": \"0ba37fae02\"}]",
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-08-28 22:23:45.568692",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_selection",
+  "naming_series",
+  "product_name",
+  "product_group",
+  "product_rx",
+  "colbrk_cat",
+  "product_cold_chain",
+  "product_nie",
+  "prodcat_code",
+  "sb_prodcat1",
+  "product_category",
+  "cb_prodcat",
+  "prodcat2",
+  "sb_cat",
+  "prodcat3",
+  "cb_cat",
+  "req_date",
+  "kfa_section_break",
+  "kfa_code",
+  "kfa_colbrk",
+  "kfa_display",
+  "product_attribute",
+  "principal",
+  "column_break5",
+  "generic_flag",
+  "cb6",
+  "brands",
+  "section_break4",
+  "drug_dosage_form",
+  "cb8",
+  "pack_strength",
+  "cb7",
+  "het",
+  "section_break3",
+  "pack_molecule",
+  "sectbreak_lini",
+  "lini",
+  "colbreak_lini",
+  "sublini",
+  "atc",
+  "atc_section_break",
+  "atc_4",
+  "section_break2",
+  "atc4",
+  "note4",
+  "column_break2",
+  "atc1",
+  "note1",
+  "section_break1",
+  "atc2",
+  "note2",
+  "column_break3",
+  "atc3",
+  "note_3",
+  "produk_info",
+  "produk_sdesc",
+  "short_desc",
+  "product_compo",
+  "product_composition",
+  "product_dosag",
+  "product_dosage",
+  "column_breakp",
+  "product_indic",
+  "product_indication",
+  "product_condic",
+  "product_contra_indication",
+  "product_seff",
+  "product_side_effects",
+  "product_drin",
+  "product_drug_interaction",
+  "product_mfg",
+  "product_manufacture",
+  "product_satt",
+  "product_special_attention",
+  "product_htu",
+  "product_how_to_use",
+  "product_store",
+  "product_storage",
+  "varians",
+  "varian",
+  "platforms",
+  "platform",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_master_item",
+  "amended_from",
+  "note_tab",
+  "platfrm_note",
+  "colbrk_note",
+  "validtr_note"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_selection",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "default": "MIGE-.MM..YY.",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Product ID",
+   "options": "MIGE-.MM..YY.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_group",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Product Group",
+   "options": "Product Group",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "product_rx",
+   "fieldtype": "Select",
+   "label": "Product Rx",
+   "options": "\nResep\nNon Resep",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "product_cold_chain",
+   "fieldtype": "Link",
+   "label": "Product Cold Chain",
+   "options": "Product Cold Chain",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "product_nie",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Product NIE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prodcat_code",
+   "fieldtype": "Link",
+   "label": "Product Category Code",
+   "options": "Product Category",
+   "print_hide": 1,
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "prodcat_code.prodcat1_name",
+   "fieldname": "product_category",
+   "fieldtype": "Data",
+   "label": "Product Category 1",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "prodcat_code.prodcat2_name",
+   "fieldname": "prodcat2",
+   "fieldtype": "Data",
+   "label": "Product Category 2",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "prodcat_code.prodcat3_name",
+   "fieldname": "prodcat3",
+   "fieldtype": "Data",
+   "label": "Product Category 3",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "req_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tanggal Request",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "kfa_section_break",
+   "fieldtype": "Section Break",
+   "label": "KFA"
+  },
+  {
+   "fieldname": "kfa_code",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "KFA Code"
+  },
+  {
+   "fieldname": "kfa_colbrk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kfa_display",
+   "fieldtype": "Data",
+   "label": "KFA Display Name"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "product_attribute",
+   "fieldtype": "Section Break",
+   "label": "Product Attribute"
+  },
+  {
+   "bold": 1,
+   "fieldname": "principal",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Principal",
+   "options": "Principal",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "generic_flag",
+   "fieldtype": "Select",
+   "label": "Generic Flag",
+   "options": "\nGeneric\nNon-generic",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "brands",
+   "fieldtype": "Link",
+   "label": "Brand",
+   "options": "Brands",
+   "reqd": 1
+  },
+  {
+   "fieldname": "het",
+   "fieldtype": "Currency",
+   "label": "HET"
+  },
+  {
+   "fieldname": "column_break5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "drug_dosage_form",
+   "fieldtype": "Link",
+   "label": "Drug Dosage Form",
+   "options": "Drug Dosage Form",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pack_molecule",
+   "fieldtype": "Link",
+   "label": "Pack Molecule",
+   "options": "Pack Molecule"
+  },
+  {
+   "fieldname": "pack_strength",
+   "fieldtype": "Data",
+   "label": "Pack Strength"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "sectbreak_lini",
+   "fieldtype": "Section Break",
+   "label": "Lini"
+  },
+  {
+   "fieldname": "lini",
+   "fieldtype": "Data",
+   "label": "Lini"
+  },
+  {
+   "fieldname": "colbreak_lini",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sublini",
+   "fieldtype": "Data",
+   "label": "Sublini"
+  },
+  {
+   "bold": 1,
+   "fieldname": "atc",
+   "fieldtype": "Tab Break",
+   "label": "ATC"
+  },
+  {
+   "fieldname": "atc_section_break",
+   "fieldtype": "Section Break",
+   "label": "ATC"
+  },
+  {
+   "bold": 1,
+   "fieldname": "atc_4",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "label": "ATC 4 Code",
+   "options": "ATC",
+   "print_hide": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fetch_from": "atc_4.atc_4",
+   "fieldname": "atc4",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "ATC 4 ",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "atc_4.note4",
+   "fieldname": "note4",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "ATC 4 Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fetch_from": "atc_4.atc_1",
+   "fieldname": "atc1",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "ATC 1",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "atc_4.note1",
+   "fieldname": "note1",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "ATC 1 Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fetch_from": "atc_4.atc_2",
+   "fieldname": "atc2",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "ATC 2",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "atc_4.note2",
+   "fieldname": "note2",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "ATC 2 Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fetch_from": "atc_4.atc_3",
+   "fieldname": "atc3",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "ATC 3",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "atc_4.note3",
+   "fieldname": "note_3",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "ATC 3 Description",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "produk_info",
+   "fieldtype": "Tab Break",
+   "label": "Produk Info"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "produk_sdesc",
+   "fieldtype": "Section Break",
+   "label": "Produk Short Desc."
+  },
+  {
+   "fieldname": "short_desc",
+   "fieldtype": "Long Text",
+   "label": "Short Description"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "product_compo",
+   "fieldtype": "Section Break",
+   "label": "Product Composition"
+  },
+  {
+   "fieldname": "product_composition",
+   "fieldtype": "Long Text",
+   "label": "Product Composition"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "product_dosag",
+   "fieldtype": "Section Break",
+   "label": "Product Dosage"
+  },
+  {
+   "fieldname": "product_dosage",
+   "fieldtype": "Long Text",
+   "label": "Product Dosage"
+  },
+  {
+   "fieldname": "column_breakp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "product_indic",
+   "fieldtype": "Section Break",
+   "label": "Product Indication"
+  },
+  {
+   "fieldname": "product_indication",
+   "fieldtype": "Long Text",
+   "label": "Product Indication"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "product_condic",
+   "fieldtype": "Section Break",
+   "label": "Product Contra Indication"
+  },
+  {
+   "fieldname": "product_contra_indication",
+   "fieldtype": "Long Text",
+   "label": "Product Contra Indication"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "product_seff",
+   "fieldtype": "Section Break",
+   "label": "Product Side Effects"
+  },
+  {
+   "fieldname": "product_side_effects",
+   "fieldtype": "Long Text",
+   "label": "Product Side Effects"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "product_drin",
+   "fieldtype": "Section Break",
+   "label": "Product Drug Interaction"
+  },
+  {
+   "fieldname": "product_drug_interaction",
+   "fieldtype": "Long Text",
+   "label": "Product Drug Interaction"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "product_mfg",
+   "fieldtype": "Section Break",
+   "label": "Product Manufacture"
+  },
+  {
+   "fieldname": "product_manufacture",
+   "fieldtype": "Link",
+   "label": "Product Manufacture",
+   "options": "Product Manufacture"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "product_satt",
+   "fieldtype": "Section Break",
+   "label": "Product Special Attention"
+  },
+  {
+   "fieldname": "product_special_attention",
+   "fieldtype": "Long Text",
+   "label": "Product Special Attention"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "product_htu",
+   "fieldtype": "Section Break",
+   "label": "Product How To Use"
+  },
+  {
+   "fieldname": "product_how_to_use",
+   "fieldtype": "Long Text",
+   "label": "Product How To Use"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "product_store",
+   "fieldtype": "Section Break",
+   "label": "Product Storage"
+  },
+  {
+   "fieldname": "product_storage",
+   "fieldtype": "Long Text",
+   "label": "Product Storage"
+  },
+  {
+   "bold": 1,
+   "fieldname": "varians",
+   "fieldtype": "Tab Break",
+   "label": "Varian"
+  },
+  {
+   "fieldname": "varian",
+   "fieldtype": "Table",
+   "in_standard_filter": 1,
+   "label": "Varian",
+   "options": "Master Item UOM"
+  },
+  {
+   "fieldname": "platforms",
+   "fieldtype": "Tab Break",
+   "label": "Platform"
+  },
+  {
+   "fieldname": "platform",
+   "fieldtype": "Table",
+   "label": "Platform",
+   "options": "Platform"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Master Item"
+  },
+  {
+   "fieldname": "parent_master_item",
+   "fieldtype": "Link",
+   "label": "Parent Master Item",
+   "options": "Master Item"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Master Item",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "note_tab",
+   "fieldtype": "Tab Break",
+   "label": "Note"
+  },
+  {
+   "fieldname": "platfrm_note",
+   "fieldtype": "Link",
+   "label": "Platform Note",
+   "options": "Merchant"
+  },
+  {
+   "fieldname": "colbrk_note",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "validtr_note",
+   "fieldtype": "Data",
+   "label": "Validator Note"
+  },
+  {
+   "fieldname": "colbrk_cat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sb_prodcat1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cb_prodcat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sb_cat",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cb_cat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cb8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Parent Name",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "make_attachments_public": 1,
+ "modified": "2023-10-30 11:29:35.668433",
+ "modified_by": "Administrator",
+ "module": "master_item",
+ "name": "Master Item",
+ "naming_rule": "By \"Naming Series\" field",
+ "nsm_parent_field": "parent_master_item",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Product",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Master Product MGR",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "product_name",
+ "sort_field": "product_name",
+ "sort_order": "ASC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

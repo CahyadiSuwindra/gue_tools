@@ -1,0 +1,270 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:product_name",
+ "creation": "2023-10-04 21:33:33.487541",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sb1",
+  "product_name",
+  "cb1",
+  "nie",
+  "sb2",
+  "image1",
+  "cb2",
+  "image2",
+  "cb3",
+  "image3",
+  "cb4",
+  "image4",
+  "cb11",
+  "image5",
+  "cb12",
+  "image6",
+  "cb13",
+  "image7",
+  "sb4",
+  "platform_name",
+  "cb5",
+  "platform_verificator",
+  "cb6",
+  "merchant_name",
+  "sb3",
+  "status",
+  "cb7",
+  "req_date",
+  "cb8",
+  "resp_date",
+  "sb5",
+  "platform_note",
+  "cb10",
+  "note"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "sb1",
+   "fieldtype": "Section Break",
+   "label": "Product Info"
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "nie",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "NIE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image1",
+   "fieldtype": "Attach Image",
+   "label": "Image1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image2",
+   "fieldtype": "Attach Image",
+   "label": "Image2"
+  },
+  {
+   "fieldname": "image3",
+   "fieldtype": "Attach Image",
+   "label": "Image3"
+  },
+  {
+   "fieldname": "image4",
+   "fieldtype": "Attach Image",
+   "label": "Image4"
+  },
+  {
+   "fieldname": "image5",
+   "fieldtype": "Attach Image",
+   "label": "Image5"
+  },
+  {
+   "fieldname": "image6",
+   "fieldtype": "Attach Image",
+   "label": "Image6"
+  },
+  {
+   "fieldname": "image7",
+   "fieldtype": "Attach Image",
+   "label": "Image7"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "sb2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "platform_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Platform Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "platform_verificator",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Platform Verificator",
+   "reqd": 1
+  },
+  {
+   "fieldname": "merchant_name",
+   "fieldtype": "Data",
+   "label": "Merchant Name",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "sb3",
+   "fieldtype": "Section Break",
+   "label": "Supporting Info"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "resp_date",
+   "fieldtype": "Date",
+   "label": "Response Date",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "platform_note",
+   "fieldtype": "Text",
+   "label": "Plaform Note",
+   "reqd": 1
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Text",
+   "label": "Note",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sb5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cb10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sb4",
+   "fieldtype": "Section Break",
+   "label": "Requestor Info"
+  },
+  {
+   "fieldname": "cb13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "req_date",
+   "fieldtype": "Date",
+   "label": "Request Date",
+   "reqd": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-05 09:32:25.787420",
+ "modified_by": "Administrator",
+ "module": "master_item",
+ "name": "Product Stagging",
+ "name_case": "UPPER CASE",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Product",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

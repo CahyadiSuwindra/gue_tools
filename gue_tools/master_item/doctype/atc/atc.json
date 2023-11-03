@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:atc_4",
+ "creation": "2023-09-05 11:41:45.755016",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sb3",
+  "atc_4",
+  "note4",
+  "cb1",
+  "atc_3",
+  "note3",
+  "sb1",
+  "atc_2",
+  "note2",
+  "cb2",
+  "atc_1",
+  "note1"
+ ],
+ "fields": [
+  {
+   "fieldname": "sb3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "atc_4",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ATC 4",
+   "unique": 1
+  },
+  {
+   "fieldname": "note4",
+   "fieldtype": "Data",
+   "label": "ATC 4 Description"
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "atc_3",
+   "fieldtype": "Data",
+   "label": "ATC 3"
+  },
+  {
+   "fieldname": "note3",
+   "fieldtype": "Data",
+   "label": "ATC 3 Description"
+  },
+  {
+   "fieldname": "sb1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "atc_2",
+   "fieldtype": "Data",
+   "label": "ATC 2"
+  },
+  {
+   "fieldname": "note2",
+   "fieldtype": "Data",
+   "label": "ATC 2 Description"
+  },
+  {
+   "fieldname": "cb2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "atc_1",
+   "fieldtype": "Data",
+   "label": "ATC 1"
+  },
+  {
+   "fieldname": "note1",
+   "fieldtype": "Data",
+   "label": "ATC 1  Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-04 14:33:34.747759",
+ "modified_by": "Administrator",
+ "module": "master_item",
+ "name": "ATC",
+ "name_case": "UPPER CASE",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "atc_4,atc_3,atc_2,atc_1",
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
